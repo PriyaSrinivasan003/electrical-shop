@@ -102,7 +102,7 @@ export default function Contact() {
 
   const handleWhatsAppRedirect = () => {
     const text = encodeURIComponent(
-      `Hello YaaWires team, my name is ${formData.name || 'a contractor'}.\n` +
+      `Hello VRL Wires and Cables team, my name is ${formData.name || 'a contractor'}.\n` +
       `Phone: ${formData.phone || 'N/A'}\n` +
       `Project Type: ${formData.projectType}\n` +
       `Subject: ${formData.subject || 'General Enquiry'}\n` +
@@ -118,7 +118,7 @@ export default function Contact() {
       <section className="relative w-full bg-[#0d1e31] overflow-hidden min-h-[260px] sm:min-h-[320px] md:min-h-[380px] flex items-center justify-center">
         <img
           src="/images/contact-banner-clean.jpg"
-          alt="YaaWires Industrial Pipes and Electrical Products"
+          alt="VRL Wires and Cables Industrial Pipes and Electrical Products"
           className="w-full h-full object-cover object-center absolute inset-0"
         />
 
@@ -245,10 +245,10 @@ export default function Contact() {
               {/* Instant WhatsApp Help Button */}
               <div className="mt-8 pt-6 border-t border-gray-100">
                 <a
-                  href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20YaaWires,%20I%20have%20an%20urgent%20material%20enquiry.`}
+                  href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20VRL%20Wires%20and%20Cables,%20I%20have%20an%20urgent%20material%20enquiry.`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-[#E53E3E] hover:bg-[#C53030] text-white py-3 px-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-sm transition-all"
+                  className="w-full bg-[#FF8E01] hover:bg-[#e57e00] text-white py-3 px-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-sm transition-all hover:scale-[1.02]"
                 >
                   <MessageSquare className="w-5 h-5" />
                   Chat on WhatsApp for Fast Quote
@@ -263,7 +263,7 @@ export default function Contact() {
                 BOQ Upload & Estimation
               </div>
               <p className="text-xs text-gray-300 leading-relaxed">
-                Have a large bill of quantities? Email your Excel or PDF sheet to <strong>sales@yaawires.com</strong> for line-item quotation within 4 hours.
+                Have a large bill of quantities? Email your Excel or PDF sheet to <strong>{COMPANY_INFO.email}</strong> for line-item quotation within 4 hours.
               </p>
             </div>
 
@@ -477,7 +477,7 @@ export default function Contact() {
                     <button
                       type="button"
                       onClick={handleWhatsAppRedirect}
-                      className="bg-[#E53E3E] hover:bg-[#C53030] text-white py-3.5 px-6 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer active:scale-98"
+                      className="bg-[#FF8E01] hover:bg-[#e57e00] text-white py-3.5 px-6 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer active:scale-98 hover:scale-[1.02]"
                     >
                       <MessageSquare className="w-4 h-4" />
                       <span>Forward to WhatsApp</span>
@@ -503,7 +503,7 @@ export default function Contact() {
 
           <div className="w-full h-96 rounded-2xl overflow-hidden border border-gray-300 shadow-md">
             <iframe
-              title="YaaWires Factory & Warehouse Location"
+              title="VRL Wires and Cables Factory & Warehouse Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.9737194689626!2d77.51475767507758!3d13.037343987284055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d1000000001%3A0x86e80b2a5e8c1b44!2sPeenya%20Industrial%20Area%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               width="100%"
               height="100%"
@@ -542,7 +542,7 @@ export default function Contact() {
             <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-xs">
               <h4 className="font-bold text-[#142B45] text-base mb-2">Can we upload our project BOQ (Bill of Quantities)?</h4>
               <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                Certainly. You can submit your requirements in the form above, or email your Excel/PDF spreadsheet directly to <strong>sales@yaawires.com</strong> or send it via WhatsApp.
+                Certainly. You can submit your requirements in the form above, or email your Excel/PDF spreadsheet directly to <strong>{COMPANY_INFO.email}</strong> or send it via WhatsApp.
               </p>
             </div>
 

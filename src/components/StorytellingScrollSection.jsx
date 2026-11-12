@@ -397,7 +397,7 @@ export default function StorytellingScrollSection() {
           <div className="relative w-full h-12 bg-white/5 rounded-2xl border border-white/10 flex items-center px-4 mb-8 overflow-hidden">
             <div className="extending-pvc-pipe h-6 rounded-lg bg-gradient-to-r from-gray-200 via-white to-gray-300 border border-gray-400 shadow-lg flex items-center px-4 transition-all duration-300">
               <span className="text-[10px] font-mono font-bold text-sky-900 tracking-wider truncate">
-                YAA-WIRES RIGID HEAVY-DUTY CONDUIT 25mm • 28 kg/cm² BURST TOLERANCE • IS:9537 PART 3
+                VRL WIRES AND CABLES RIGID HEAVY-DUTY CONDUIT 25mm • 28 kg/cm² BURST TOLERANCE • IS:9537 PART 3
               </span>
             </div>
           </div>

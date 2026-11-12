@@ -10,6 +10,7 @@ import {
   Clock
 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/content';
+import VRLLogo from './VRLLogo';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -50,7 +51,7 @@ export default function Navbar() {
               ISO 9001:2015 & BIS Certified
             </span>
             <a 
-              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20YaaWires,%20I%20want%20to%20enquire%20about%20your%20products.`} 
+              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20VRL%20Wires%20and%20Cables,%20I%20want%20to%20enquire%20about%20your%20products.`} 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-[#25D366] hover:underline font-semibold flex items-center gap-1"
@@ -68,18 +69,8 @@ export default function Navbar() {
             
             {/* Logo Left-Aligned */}
             <div className="flex items-center">
-              <Link to="/" className="flex items-center gap-3.5 group py-2" onClick={() => setMobileMenuOpen(false)}>
-                <div className="w-13 h-13 rounded-xl bg-[#142B45] flex items-center justify-center text-white shadow-md group-hover:bg-[#FF8E01] transition-all duration-300 transform group-hover:scale-105">
-                  <Zap className="w-7 h-7 text-[#FF8E01] group-hover:text-white transition-colors" />
-                </div>
-                <div className="flex flex-col text-left">
-                  <span className="text-2xl sm:text-3xl font-black tracking-tight text-[#142B45] leading-none">
-                    YAA<span className="text-[#FF8E01]">WIRES</span>
-                  </span>
-                  <span className="text-[10px] sm:text-[11px] uppercase font-extrabold tracking-[0.2em] text-gray-500 mt-1">
-                    & INDUSTRIAL PIPES
-                  </span>
-                </div>
+              <Link to="/" className="flex items-center group py-2" onClick={() => setMobileMenuOpen(false)}>
+                <VRLLogo variant="light" className="h-12 sm:h-14 w-auto group-hover:scale-105 transition-transform duration-300" />
               </Link>
             </div>
 

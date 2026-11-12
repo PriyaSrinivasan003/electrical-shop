@@ -78,7 +78,7 @@ export default function ContactElectricianMascot({
 
           {/* Badge */}
           <rect x="86" y="145" width="14" height="12" rx="2" fill="#0F172A" />
-          <text x="88" y="154" fontSize="5" fontWeight="bold" fill="#FF8E01" fontFamily="sans-serif">YAA</text>
+          <text x="88" y="154" fontSize="5" fontWeight="bold" fill="#FF8E01" fontFamily="sans-serif">VRL</text>
 
           {/* Leather Tool Belt */}
           <rect x="76" y="204" width="74" height="11" rx="2" fill="#78350F" />

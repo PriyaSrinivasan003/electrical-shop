@@ -23,7 +23,7 @@ const REVIEWS = [
   {
     id: 4,
     rating: 5,
-    quote: "YaaWires provided the complete electrical cable and UPVC pipe supply for our commercial high-rise. Zero delays, pristine quality, and the test certificates passed inspection without a hitch.",
+    quote: "VRL Wires and Cables provided the complete electrical cable and UPVC pipe supply for our commercial high-rise. Zero delays, pristine quality, and the test certificates passed inspection without a hitch.",
     author: "RAJESHWAR RAO"
   },
   {
@@ -35,7 +35,7 @@ const REVIEWS = [
   {
     id: 6,
     rating: 5,
-    quote: "Switching to YaaWires for our industrial CPVC and drainage installations cut our plumbing material costs by 14% while delivering superior pressure tolerance.",
+    quote: "Switching to VRL Wires and Cables for our industrial CPVC and drainage installations cut our plumbing material costs by 14% while delivering superior pressure tolerance.",
     author: "ANITA SHARMA"
   }
 ];

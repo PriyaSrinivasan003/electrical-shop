@@ -290,84 +290,84 @@ export default function About() {
       </section>
 
       {/* 7. WHY CHOOSE US SECTION (PLACED BELOW TESTING & COMMITMENT) */}
-      <section className="bg-[#12161E] text-white pt-24 pb-28 relative overflow-hidden">
-        {/* Subtle architectural blueprint wireframe background pattern */}
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:28px_28px] pointer-events-none" />
+      <section className="bg-[#FAF8F5] text-[#142B45] pt-24 pb-28 relative overflow-hidden border-t border-gray-200">
+        {/* Subtle architectural dot blueprint pattern */}
+        <div className="absolute inset-0 opacity-25 bg-[radial-gradient(#142B45_1px,transparent_1px)] [background-size:28px_28px] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
           {/* Section Header */}
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-widest uppercase text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-widest uppercase text-[#142B45] mb-4">
               WHY CHOOSE US
             </h2>
-            <p className="text-gray-200 text-base sm:text-lg font-medium leading-relaxed">
+            <p className="text-gray-600 text-base sm:text-lg font-medium leading-relaxed">
               We offer unmatched product quality, certified manufacturing processes, on-time delivery.
             </p>
           </div>
 
-          {/* 4 Feature Columns */}
+          {/* 4 Feature Columns with Navy / Blue Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-14">
             
             {/* Card 1: 27 Year Experience */}
-            <div className="bg-white text-gray-800 rounded-none shadow-xl p-8 flex flex-col items-center text-center hover:-translate-y-1.5 transition-transform duration-300">
-              <div className="w-16 h-16 mb-6 flex items-center justify-center text-[#D9231E]">
+            <div className="bg-[#142B45] text-white rounded-xl shadow-xl p-8 flex flex-col items-center text-center hover:-translate-y-2 hover:bg-[#0f2136] transition-all duration-300 border border-blue-900/40">
+              <div className="w-16 h-16 mb-6 flex items-center justify-center text-[#FF8E01]">
                 <FileText className="w-12 h-12 stroke-[1.5]" />
               </div>
-              <h3 className="font-extrabold text-sm uppercase tracking-wider text-black mb-4">
+              <h3 className="font-extrabold text-sm uppercase tracking-wider text-white mb-4">
                 27 YEAR EXPERIENCE
               </h3>
-              <p className="text-gray-600 text-xs sm:text-[13px] leading-relaxed">
+              <p className="text-gray-300 text-xs sm:text-[13px] leading-relaxed">
                 Delivering trusted manufacturing expertise with consistent quality and reliable results always guaranteed.
               </p>
             </div>
 
             {/* Card 2: Professional Team */}
-            <div className="bg-white text-gray-800 rounded-none shadow-xl p-8 flex flex-col items-center text-center hover:-translate-y-1.5 transition-transform duration-300">
-              <div className="w-16 h-16 mb-6 flex items-center justify-center text-[#D9231E]">
+            <div className="bg-[#142B45] text-white rounded-xl shadow-xl p-8 flex flex-col items-center text-center hover:-translate-y-2 hover:bg-[#0f2136] transition-all duration-300 border border-blue-900/40">
+              <div className="w-16 h-16 mb-6 flex items-center justify-center text-[#FF8E01]">
                 <HardHat className="w-12 h-12 stroke-[1.5]" />
               </div>
-              <h3 className="font-extrabold text-sm uppercase tracking-wider text-black mb-4">
+              <h3 className="font-extrabold text-sm uppercase tracking-wider text-white mb-4">
                 PROFESSIONAL TEAM
               </h3>
-              <p className="text-gray-600 text-xs sm:text-[13px] leading-relaxed">
+              <p className="text-gray-300 text-xs sm:text-[13px] leading-relaxed">
                 Dedicated professionals ensuring precision, efficiency, and excellence in every project.
               </p>
             </div>
 
             {/* Card 3: Safety is Top Priority */}
-            <div className="bg-white text-gray-800 rounded-none shadow-xl p-8 flex flex-col items-center text-center hover:-translate-y-1.5 transition-transform duration-300">
-              <div className="w-16 h-16 mb-6 flex items-center justify-center text-[#D9231E]">
+            <div className="bg-[#142B45] text-white rounded-xl shadow-xl p-8 flex flex-col items-center text-center hover:-translate-y-2 hover:bg-[#0f2136] transition-all duration-300 border border-blue-900/40">
+              <div className="w-16 h-16 mb-6 flex items-center justify-center text-[#FF8E01]">
                 <Shield className="w-12 h-12 stroke-[1.5]" />
               </div>
-              <h3 className="font-extrabold text-sm uppercase tracking-wider text-black mb-4">
+              <h3 className="font-extrabold text-sm uppercase tracking-wider text-white mb-4">
                 SAFETY IS TOP PRIORITY
               </h3>
-              <p className="text-gray-600 text-xs sm:text-[13px] leading-relaxed">
+              <p className="text-gray-300 text-xs sm:text-[13px] leading-relaxed">
                 Strict safety standards followed to protect people, processes, and products daily now.
               </p>
             </div>
 
             {/* Card 4: Large Scale */}
-            <div className="bg-white text-gray-800 rounded-none shadow-xl p-8 flex flex-col items-center text-center hover:-translate-y-1.5 transition-transform duration-300">
-              <div className="w-16 h-16 mb-6 flex items-center justify-center text-[#D9231E]">
+            <div className="bg-[#142B45] text-white rounded-xl shadow-xl p-8 flex flex-col items-center text-center hover:-translate-y-2 hover:bg-[#0f2136] transition-all duration-300 border border-blue-900/40">
+              <div className="w-16 h-16 mb-6 flex items-center justify-center text-[#FF8E01]">
                 <Globe className="w-12 h-12 stroke-[1.5]" />
               </div>
-              <h3 className="font-extrabold text-sm uppercase tracking-wider text-black mb-4">
+              <h3 className="font-extrabold text-sm uppercase tracking-wider text-white mb-4">
                 LARGE SCALE
               </h3>
-              <p className="text-gray-600 text-xs sm:text-[13px] leading-relaxed">
+              <p className="text-gray-300 text-xs sm:text-[13px] leading-relaxed">
                 Strong networks and robust infrastructure enabling fast delivery and dependable service always.
               </p>
             </div>
 
           </div>
 
-          {/* Red Learn More Button */}
+          {/* Contact Button */}
           <div className="text-center">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 bg-[#D9231E] hover:bg-[#b81c17] text-white px-8 py-3 font-extrabold text-xs uppercase tracking-widest shadow-md hover:shadow-lg transition-all"
+              className="inline-flex items-center gap-2 bg-[#FF8E01] hover:bg-[#e57e00] text-white px-8 py-3.5 rounded-lg font-extrabold text-xs uppercase tracking-widest shadow-md hover:shadow-lg transition-all"
             >
               <span>CONTACT OUR TEAM</span>
               <ArrowRight className="w-4 h-4" />

@@ -13,7 +13,7 @@ import { Check, Mail, MessageSquare, ArrowRight } from 'lucide-react';
  * 
  * 2. LETTER REVEAL:
  *    - Letter sheet rises upwards out of envelope body
- *    - Displays authentic preview with customer name, subject, and YaaWires priority badge
+ *    - Displays authentic preview with customer name, subject, and VRL Wires and Cables priority badge
  * 
  * 3. PAPER PLANE TRANSFORMATION & FLIGHT:
  *    - Folds dynamically into a white + orange accented paper plane
@@ -129,7 +129,7 @@ export default function EmailSendingSuccess({
                   <div className="flex items-center gap-1.5">
                     <div className="w-2.5 h-2.5 rounded-full bg-[#FF8E01]" />
                     <span className="text-[9px] font-black tracking-wider text-[#142B45] font-mono uppercase">
-                      YAA-OFFICIAL-BOQ
+                      VRL-OFFICIAL-BOQ
                     </span>
                   </div>
                   <span className="text-[8px] font-bold text-[#FF8E01] bg-[#FF8E01]/10 px-1.5 py-0.5 rounded">
@@ -335,7 +335,7 @@ export default function EmailSendingSuccess({
             {stage === 'opening' && 'Opening official envelope...'}
             {stage === 'revealing' && 'Extracting specifications letter...'}
             {stage === 'plane' && 'Folding into flight dispatch plane...'}
-            {stage === 'flying' && 'Streaming to YaaWires sales desk...'}
+            {stage === 'flying' && 'Streaming to VRL Wires and Cables sales desk...'}
             {stage === 'success' && 'Verified delivery complete ✓ (SMTP 250 OK)'}
           </span>
         </div>
@@ -353,7 +353,7 @@ export default function EmailSendingSuccess({
           {onWhatsAppRedirect && (
             <button
               onClick={onWhatsAppRedirect}
-              className="bg-[#E53E3E] hover:bg-[#C53030] text-white text-xs font-bold px-4 py-2 rounded-lg flex items-center gap-1.5 transition-colors cursor-pointer"
+              className="bg-[#FF8E01] hover:bg-[#e57e00] text-white text-xs font-bold px-4 py-2 rounded-lg flex items-center gap-1.5 transition-colors cursor-pointer"
             >
               <MessageSquare className="w-3.5 h-3.5" />
               <span>Forward via WhatsApp</span>

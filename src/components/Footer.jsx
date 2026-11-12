@@ -12,6 +12,7 @@ import {
   FileText 
 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/content';
+import VRLLogo from './VRLLogo';
 
 export default function Footer() {
   return (
@@ -22,17 +23,9 @@ export default function Footer() {
           {/* Column 1: Company Profile */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 rounded-lg bg-[#FF8E01] flex items-center justify-center text-white">
-                <Zap className="w-6 h-6" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-2xl font-black text-white tracking-tight leading-none">
-                  YAA<span className="text-[#FF8E01]">WIRES</span>
-                </span>
-                <span className="text-[10px] uppercase font-bold tracking-widest text-gray-400 mt-1">
-                  & INDUSTRIAL PIPES
-                </span>
-              </div>
+              <Link to="/">
+                <VRLLogo variant="dark" className="h-12 w-auto" />
+              </Link>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed mb-6">
               Leading manufacturer & master distributor of heavy-duty PVC electrical conduits, UPVC & CPVC plumbing pipes, and high-conductivity copper building wires. Built for contractors who never compromise on safety.

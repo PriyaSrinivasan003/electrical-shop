@@ -117,7 +117,7 @@ export default function EmailDispatchAnimation({
                 <div className="flex items-center justify-between border-b border-gray-100 pb-1">
                   <div className="flex items-center gap-1">
                     <div className="w-2 h-2 rounded-full bg-[#FF8E01]" />
-                    <span className="text-[8px] font-black font-mono text-[#142B45]">YAA-BOQ-QUOTE</span>
+                    <span className="text-[8px] font-black font-mono text-[#142B45]">VRL-BOQ-QUOTE</span>
                   </div>
                   <span className="text-[7px] text-gray-400">PRIORITY</span>
                 </div>
@@ -200,7 +200,7 @@ export default function EmailDispatchAnimation({
               </div>
               <h4 className="text-base font-bold text-white">Email Dispatched Successfully!</h4>
               <p className="text-xs text-emerald-300 mt-0.5">
-                Delivered straight to YaaWires sales desk inbox.
+                Delivered straight to VRL Wires and Cables sales desk inbox.
               </p>
             </motion.div>
           )}

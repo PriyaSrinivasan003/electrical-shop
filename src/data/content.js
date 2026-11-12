@@ -1,11 +1,11 @@
 export const COMPANY_INFO = {
-  name: "YaaWires & Pipes",
+  name: "VRL Wires and Cables",
   tagline: "Industrial Grade Electrical & Plumbing Solutions",
   phone: "+91 98765 43210",
   altPhone: "+91 98450 12345",
   whatsapp: "+919876543210",
-  email: "sales@yaawires.com",
-  supportEmail: "support@yaawires.com",
+  email: "sales@vrlwires.com",
+  supportEmail: "support@vrlwires.com",
   address: "Plot No. 42-45, Industrial Area, Phase-II, Peenya, Bengaluru, Karnataka 560058, India",
   workingHours: "Monday - Saturday: 8:30 AM - 7:30 PM",
   yearEstablished: "2008",
@@ -16,7 +16,7 @@ export const PVC_PIPE_PRODUCTS = [
   {
     id: "polyhills-pvc-25mm",
     name: "Polyhills PVC 25mm",
-    category: "Electrical PVC Conduit Pipe",
+    category: "PVC Pipes",
     tag: "PVC 25mm Heavy Duty",
     description: "High impact resistance Polyhills 25mm rigid PVC electrical conduit pipes designed for concealed ceiling slabs, commercial embedding, and exposed surface installations.",
     image: "/images/polyhills-pvc-25mm-pipes.png",
@@ -144,10 +144,10 @@ export const ELECTRICAL_WIRE_PRODUCTS = [
   {
     id: "polyhills-1-00sqmm",
     name: "1.00 Sqmm Single Core Multi Strand Cable",
-    category: "Multistrand Cables, Wires & Cables",
+    category: "House Wiring Cables",
     tag: "Gold Series 90 Meters",
     description: "Polyhills Gold Series 1.00 Sq.mm single core multi-strand building wire with superior insulation resistance, 99.97% electrolytic pure copper, and fire retardant properties.",
-    image: "/images/polyhills-1-00sqmm-box.png",
+    image: "/images/wire-coil-red-clean.jpg",
     specs: [
       { label: "Cross Section", value: "1.00 Sq.mm Nominal Area" },
       { label: "Coil Length", value: "90 Meters Standard Box" },
@@ -167,10 +167,10 @@ export const ELECTRICAL_WIRE_PRODUCTS = [
   {
     id: "polyhills-1-50sqmm",
     name: "1.50 Sqmm Single Core Multi Strand Cable",
-    category: "Multistrand Cables, Wires & Cables",
+    category: "House Wiring Cables",
     tag: "Gold Series 90 Meters",
     description: "Polyhills Gold Series 1.50 Sq.mm single core multi-strand copper house wire engineered for optimal electrical conductivity, thermal stability, and maximum home circuit safety.",
-    image: "/images/polyhills-1-50sqmm-box.png",
+    image: "/images/wire-catalog-pack-blue-yellow.jpg",
     specs: [
       { label: "Cross Section", value: "1.50 Sq.mm Nominal Area" },
       { label: "Coil Length", value: "90 Meters Standard Box" },
@@ -190,10 +190,10 @@ export const ELECTRICAL_WIRE_PRODUCTS = [
   {
     id: "polyhills-2-50sqmm",
     name: "2.50 Sqmm Single Core Multi Strand Cable",
-    category: "Multistrand Cables, Wires & Cables",
+    category: "House Wiring Cables",
     tag: "Gold Series 90 Meters",
     description: "Polyhills Gold Series 2.50 Sq.mm heavy-duty single core copper wire designed for demanding power points, kitchen appliances, and residential air conditioners.",
-    image: "/images/polyhills-2-50sqmm-box.png",
+    image: "/images/blue-wire-coil.png",
     specs: [
       { label: "Cross Section", value: "2.50 Sq.mm Nominal Area" },
       { label: "Coil Length", value: "90 Meters Standard Box" },
@@ -213,7 +213,7 @@ export const ELECTRICAL_WIRE_PRODUCTS = [
   {
     id: "fabgold-6-00sqmm",
     name: "FAB Gold 6.0 Sq.mm High Performance Electric Wire",
-    category: "Multistrand Cables, Wires & Cables",
+    category: "Power Cables",
     tag: "FAB Gold 90 Meters Box & Coil",
     description: "FAB Gold 6.0 Sq.mm (10 SWG, 1100V) high performance flame retardant low smoke (LSFR/FR) PVC insulated building cable with high heat resistance and maximum electrical flexibility.",
     image: "/images/fabgold-6sqmm-box.png",
@@ -235,7 +235,7 @@ export const ELECTRICAL_WIRE_PRODUCTS = [
   {
     id: "single-core-red-copper-wire",
     name: "FR PVC Single Core Multi-Strand Wire (Red)",
-    category: "Multistrand Cables, Wires & Cables",
+    category: "Flexible Wires",
     tag: "Phase Lead Wire Coil",
     description: "Heavy-duty red flame retardant multi-strand copper house wire coil, engineered for active AC phase line distribution with superior insulation dielectric strength.",
     image: "/images/red-wire-coil.png",
@@ -256,7 +256,7 @@ export const ELECTRICAL_WIRE_PRODUCTS = [
   {
     id: "single-core-blue-copper-wire",
     name: "FR-LSH Single Core Multi-Strand Wire (Blue)",
-    category: "Multistrand Cables, Wires & Cables",
+    category: "Flexible Wires",
     tag: "Neutral / Secondary Phase Wire",
     description: "Industrial grade blue insulated single core multi-strand copper electrical cable, featuring stripped bare copper conductor reveal for clean termination and high conductivity.",
     image: "/images/blue-wire-coil.png",
@@ -277,7 +277,7 @@ export const ELECTRICAL_WIRE_PRODUCTS = [
   {
     id: "polyhills-vir-drum-packing",
     name: "Polyhills PVC Insulated Single Core Unsheathed Solid / Stranded Copper Wire (VIR) – Drum Packing",
-    category: "VIR Cables, Wires & Cables",
+    category: "Industrial Cables",
     tag: "VIR Cables Drum Packing",
     description: "Polyhills commercial drum-packed single core unsheathed solid/stranded copper VIR cables engineered for industrial conduits, switchboard panels, and large project bulk distribution.",
     image: "/images/polyhills-vir-multicore.png",
@@ -299,7 +299,7 @@ export const ELECTRICAL_WIRE_PRODUCTS = [
   {
     id: "polyhills-fr-pvc-copper-vir",
     name: "Polyhills FR PVC Insulated Single Core Unsheathed Copper Wire (VIR)",
-    category: "VIR Cables, Wires & Cables",
+    category: "Industrial Cables",
     tag: "FR PVC Insulated VIR",
     description: "Polyhills Fire Retardant (FR) PVC insulated single core unsheathed pure copper wire with high oxygen index and heat resistance for safety-critical residential and commercial conduit installations.",
     image: "/images/polyhills-fr-vir-copper.png",

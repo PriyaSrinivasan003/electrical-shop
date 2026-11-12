@@ -157,7 +157,7 @@ export default function PvcPipes() {
               Get Pipe Quote
             </Link>
             <a
-              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20YaaWires,%20I%20need%20a%20quote%20for%20PVC/UPVC/CPVC%20pipes.`}
+              href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20VRL%20Wires%20and%20Cables,%20I%20need%20a%20quote%20for%20PVC/UPVC/CPVC%20pipes.`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg text-sm font-bold transition-colors border border-white/20"

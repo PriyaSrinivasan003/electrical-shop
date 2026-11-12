@@ -17,7 +17,7 @@ export default function MobileMessagingInteractive({
   isFormSuccess = false
 }) {
   const [messages, setMessages] = useState([
-    { id: 1, text: "Hello YaaWires! Looking for 2.5mm FR-LSH wires & conduits.", from: 'user', time: '10:41 AM' },
+    { id: 1, text: "Hello VRL Wires and Cables! Looking for 2.5mm FR-LSH wires & conduits.", from: 'user', time: '10:41 AM' },
     { id: 2, text: "Hi there! Our PEENYA central warehouse has ready stock available.", from: 'sparky', time: '10:42 AM' }
   ]);
   const [isTyping, setIsTyping] = useState(false);
@@ -157,7 +157,7 @@ export default function MobileMessagingInteractive({
               type="text"
               value={outgoingText}
               onChange={(e) => setOutgoingText(e.target.value)}
-              placeholder="Type message to YaaWires..."
+              placeholder="Type message to VRL Wires and Cables..."
               className="w-full text-xs text-gray-800 bg-transparent focus:outline-none"
               onKeyDown={(e) => {
                 if (e.key === 'Enter') handleSendAnimation();
