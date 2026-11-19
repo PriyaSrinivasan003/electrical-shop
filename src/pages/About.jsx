@@ -71,18 +71,33 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#142B45] leading-tight mb-6">
-              Sixteen Years of Engineering Superior Electrical & Fluid Systems
+              A Trusted Industrial Brand from <br className="hidden sm:inline" />
+              <span className="text-[#FF8E01]">Tamil Nadu</span>
             </h2>
             <div className="space-y-4 text-gray-600 text-sm sm:text-base leading-relaxed">
               <p>
-                Established in 2008 in the industrial heart of Bengaluru, <strong>{COMPANY_INFO.name}</strong> started with a single manufacturing goal: eliminate the dangerous market compromises of substandard copper wires and fragile recycled PVC conduits that cause electrical fires and plumbing leaks.
+                Our company is a proud Tamil Nadu–based manufacturer committed to delivering high-quality industrial products at the most competitive prices. With local production, strong distribution across the state, and a focus on quality and affordability, we ensure our products reach customers efficiently while building a reliable and trustworthy brand.
               </p>
-              <p>
-                Over the past 16 years, our operations have grown into an advanced multi-line manufacturing and master distribution ecosystem. We service over 1,200 commercial builders, MEP consultants, industrial plants, and licensed electrical contractors across South India and beyond.
-              </p>
-              <p>
-                From heavy-duty ASTM Schedule 80 UPVC plumbing lines to flame-retardant FR-LSH house wires and 33kV armoured transmission cables, our inventory represents the apex of structural durability and electrical safety.
-              </p>
+            </div>
+
+            {/* Key Advantages Checklist */}
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="flex items-center gap-2.5 bg-[#FAF8F5] p-3 rounded-xl border border-gray-200">
+                <CheckCircle className="w-5 h-5 text-[#FF8E01] shrink-0" />
+                <span className="text-xs sm:text-sm font-bold text-[#142B45]">Local Manufacturing Excellence</span>
+              </div>
+              <div className="flex items-center gap-2.5 bg-[#FAF8F5] p-3 rounded-xl border border-gray-200">
+                <CheckCircle className="w-5 h-5 text-[#FF8E01] shrink-0" />
+                <span className="text-xs sm:text-sm font-bold text-[#142B45]">Competitive &amp; Affordable Pricing</span>
+              </div>
+              <div className="flex items-center gap-2.5 bg-[#FAF8F5] p-3 rounded-xl border border-gray-200">
+                <CheckCircle className="w-5 h-5 text-[#FF8E01] shrink-0" />
+                <span className="text-xs sm:text-sm font-bold text-[#142B45]">Strong Distribution Network</span>
+              </div>
+              <div className="flex items-center gap-2.5 bg-[#FAF8F5] p-3 rounded-xl border border-gray-200">
+                <CheckCircle className="w-5 h-5 text-[#FF8E01] shrink-0" />
+                <span className="text-xs sm:text-sm font-bold text-[#142B45]">Reliable Industrial Quality</span>
+              </div>
             </div>
 
             <div className="mt-8 pt-6 border-t border-gray-200 grid grid-cols-2 sm:grid-cols-3 gap-4">
@@ -92,7 +107,7 @@ export default function About() {
               </div>
               <div>
                 <div className="text-2xl font-black text-[#FF8E01]">100%</div>
-                <div className="text-xs text-gray-500 font-semibold uppercase mt-0.5">Tested Copper & Resin</div>
+                <div className="text-xs text-gray-500 font-semibold uppercase mt-0.5">Tested Copper &amp; Resin</div>
               </div>
               <div className="col-span-2 sm:col-span-1">
                 <div className="text-2xl font-black text-[#142B45]">24-48h</div>
@@ -126,41 +141,68 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            {/* Mission Card */}
-            <div className="bg-[#F5F7FA] border border-gray-200 rounded-2xl p-8 relative overflow-hidden group hover:shadow-lg transition-all">
-              <div className="w-14 h-14 rounded-xl bg-[#142B45] flex items-center justify-center text-[#FF8E01] mb-6">
-                <Target className="w-8 h-8" />
+            {/* Vision Card */}
+            <div className="bg-[#F5F7FA] border border-gray-200 rounded-2xl p-8 relative overflow-hidden group hover:shadow-lg transition-all flex flex-col justify-between">
+              <div>
+                <div className="w-14 h-14 rounded-xl bg-[#FF8E01] flex items-center justify-center text-white mb-6">
+                  <Eye className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-black text-[#142B45] mb-4">OUR VISION</h3>
+                <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+                  To become Tamil Nadu’s most trusted industrial brand by delivering high-quality products at the best prices, reaching every customer through strong distribution, and setting a new standard for value, reliability, and service.
+                </p>
               </div>
-              <h3 className="text-2xl font-black text-[#142B45] mb-4">Our Mission</h3>
-              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                To equip construction engineers, electrical contractors, and plumbers with certified, uncompromisingly safe wires and conduits that protect lives, eliminate maintenance liabilities, and guarantee long-term infrastructure durability.
-              </p>
-              <div className="mt-6 flex flex-col gap-2 text-xs font-semibold text-gray-700">
-                <span className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#FF8E01]" /> Eliminate counterfeit & low-gauge wires from job sites
-                </span>
-                <span className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#FF8E01]" /> Provide factory-direct transparency in bulk pricing
-                </span>
+
+              {/* 4 Pillars: Quality, Innovation, Growth, Sustainability */}
+              <div className="mt-8 pt-6 border-t border-gray-200 grid grid-cols-2 gap-3">
+                <div className="bg-white p-3 rounded-xl border border-gray-200 text-center font-bold text-xs uppercase tracking-wider text-[#142B45] flex items-center justify-center gap-1.5 shadow-xs">
+                  <span className="w-2 h-2 rounded-full bg-[#FF8E01]"></span>
+                  Quality
+                </div>
+                <div className="bg-white p-3 rounded-xl border border-gray-200 text-center font-bold text-xs uppercase tracking-wider text-[#142B45] flex items-center justify-center gap-1.5 shadow-xs">
+                  <span className="w-2 h-2 rounded-full bg-[#FF8E01]"></span>
+                  Innovation
+                </div>
+                <div className="bg-white p-3 rounded-xl border border-gray-200 text-center font-bold text-xs uppercase tracking-wider text-[#142B45] flex items-center justify-center gap-1.5 shadow-xs">
+                  <span className="w-2 h-2 rounded-full bg-[#FF8E01]"></span>
+                  Growth
+                </div>
+                <div className="bg-white p-3 rounded-xl border border-gray-200 text-center font-bold text-xs uppercase tracking-wider text-[#142B45] flex items-center justify-center gap-1.5 shadow-xs">
+                  <span className="w-2 h-2 rounded-full bg-[#FF8E01]"></span>
+                  Sustainability
+                </div>
               </div>
             </div>
 
-            {/* Vision Card */}
-            <div className="bg-[#F5F7FA] border border-gray-200 rounded-2xl p-8 relative overflow-hidden group hover:shadow-lg transition-all">
-              <div className="w-14 h-14 rounded-xl bg-[#FF8E01] flex items-center justify-center text-white mb-6">
-                <Eye className="w-8 h-8" />
+            {/* Mission Card */}
+            <div className="bg-[#F5F7FA] border border-gray-200 rounded-2xl p-8 relative overflow-hidden group hover:shadow-lg transition-all flex flex-col justify-between">
+              <div>
+                <div className="w-14 h-14 rounded-xl bg-[#142B45] flex items-center justify-center text-[#FF8E01] mb-6">
+                  <Target className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-black text-[#142B45] mb-4">OUR MISSION</h3>
+                <div className="space-y-3.5 text-xs sm:text-sm text-gray-700">
+                  <div className="flex items-start gap-2.5">
+                    <CheckCircle className="w-5 h-5 text-[#FF8E01] shrink-0 mt-0.5" />
+                    <span className="leading-relaxed">We provide A–Z Industrial solutions with reliable quality and competitive prices.</span>
+                  </div>
+                  <div className="flex items-start gap-2.5">
+                    <CheckCircle className="w-5 h-5 text-[#FF8E01] shrink-0 mt-0.5" />
+                    <span className="leading-relaxed">Manufacturing locally in Tamil Nadu for better value and faster service.</span>
+                  </div>
+                  <div className="flex items-start gap-2.5">
+                    <CheckCircle className="w-5 h-5 text-[#FF8E01] shrink-0 mt-0.5" />
+                    <span className="leading-relaxed">With a strong distribution network and responsive support.</span>
+                  </div>
+                  <div className="flex items-start gap-2.5">
+                    <CheckCircle className="w-5 h-5 text-[#FF8E01] shrink-0 mt-0.5" />
+                    <span className="leading-relaxed">We ensure customer satisfaction while growing ethically and sustainably.</span>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-black text-[#142B45] mb-4">Our Vision</h3>
-              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                To be India's most dependable integrated electrical and plumbing supply partner, recognized for setting the benchmark in fire retardant compounding, lead-free piping innovations, and contractor-centric technical support.
-              </p>
-              <div className="mt-6 flex flex-col gap-2 text-xs font-semibold text-gray-700">
-                <span className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#FF8E01]" /> Expand green, halogen-free, recyclable polymer formulations
-                </span>
-                <span className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-[#FF8E01]" /> Zero delivery delays with digital inventory synchronization
-                </span>
+
+              <div className="mt-8 pt-4 border-t border-gray-200 text-xs font-semibold text-gray-500">
+                Ethical Growth • Responsive Support • Tamil Nadu Local Excellence
               </div>
             </div>
 

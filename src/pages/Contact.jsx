@@ -205,12 +205,9 @@ export default function Contact() {
                     <Phone className="w-5 h-5 text-[#FF8E01]" />
                   </div>
                   <div>
-                    <span className="block font-bold text-[#142B45]">Phone Numbers:</span>
-                    <a href={`tel:${COMPANY_INFO.phone}`} className="text-gray-600 hover:text-[#FF8E01] block">
-                      {COMPANY_INFO.phone} (Main Technical Desk)
-                    </a>
-                    <a href={`tel:${COMPANY_INFO.altPhone}`} className="text-gray-600 hover:text-[#FF8E01] block">
-                      {COMPANY_INFO.altPhone} (Dispatches)
+                    <span className="block font-bold text-[#142B45]">Phone Number:</span>
+                    <a href={`tel:${COMPANY_INFO.phone}`} className="text-gray-600 hover:text-[#FF8E01] block font-semibold">
+                      {COMPANY_INFO.phone}
                     </a>
                   </div>
                 </div>
@@ -237,7 +234,6 @@ export default function Contact() {
                   <div>
                     <span className="block font-bold text-[#142B45]">Working Hours:</span>
                     <span className="text-gray-600 block">{COMPANY_INFO.workingHours}</span>
-                    <span className="text-xs text-green-600 font-semibold">Sundays: Emergency Dispatch on Prior Notice</span>
                   </div>
                 </div>
               </div>
@@ -330,7 +326,7 @@ export default function Contact() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="e.g. +91 98765 43210"
+                        placeholder="e.g. +91 94491 17729"
                         className={`w-full px-4 py-2.5 rounded-lg border text-sm focus:outline-none focus:ring-2 ${
                           formErrors.phone 
                             ? 'border-red-400 focus:ring-red-400 bg-red-50/30' 
@@ -497,14 +493,24 @@ export default function Contact() {
       <section className="bg-white py-12 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-8">
-            <h3 className="text-2xl font-black text-[#142B45]">Visit Our Central Industrial Depot</h3>
-            <p className="text-gray-500 text-xs sm:text-sm mt-1">Conveniently located in Peenya Industrial Area with direct heavy vehicle container dock access.</p>
+            <h3 className="text-2xl font-black text-[#142B45]">Visit Our Facility</h3>
+            <p className="text-gray-500 text-xs sm:text-sm mt-1">Conveniently located at {COMPANY_INFO.address}.</p>
+            <div className="mt-2">
+              <a 
+                href={COMPANY_INFO.mapsUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-[#FF8E01] hover:underline"
+              >
+                <span>Open in Google Maps App ↗</span>
+              </a>
+            </div>
           </div>
 
           <div className="w-full h-96 rounded-2xl overflow-hidden border border-gray-300 shadow-md">
             <iframe
-              title="VRL Wires and Cables Factory & Warehouse Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.9737194689626!2d77.51475767507758!3d13.037343987284055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d1000000001%3A0x86e80b2a5e8c1b44!2sPeenya%20Industrial%20Area%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              title="VRL Wires and Cables Facility Location - Rasipuram"
+              src="https://maps.google.com/maps?q=11.6579987,78.1371627&z=15&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -528,7 +534,7 @@ export default function Contact() {
             <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-xs">
               <h4 className="font-bold text-[#142B45] text-base mb-2">How fast do you dispatch bulk wire and pipe orders?</h4>
               <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                Standard items (house wires, PVC conduit pipes, UPVC pipes) are dispatched from our Peenya central warehouse within 24 to 48 hours. Custom cable cuts and drum lengths take 3 to 5 business days.
+                Standard items (house wires, PVC conduit pipes, UPVC pipes) are dispatched from our warehouse within 24 to 48 hours. Custom cable cuts and drum lengths take 3 to 5 business days.
               </p>
             </div>
 

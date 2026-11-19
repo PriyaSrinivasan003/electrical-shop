@@ -224,65 +224,76 @@ export default function Home() {
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#142B45] tracking-tight">
-            Our Mission & Vision
+            OUR MISSION &amp; VISION
           </h2>
           <p className="text-gray-600 mt-2 text-sm sm:text-base">
-            Setting the highest standards in safety, pure copper conductivity, and durable fluid infrastructure.
+            Setting the standard for value, reliable industrial quality, and service across Tamil Nadu.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Mission Card - Dynamic Color Transition on Hover */}
-          <div className="bg-white hover:bg-[#142B45] border border-gray-200 hover:border-[#142B45] rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-2xl transition-all duration-300 relative overflow-hidden group hover:-translate-y-1.5 cursor-pointer">
-            <div className="w-16 h-16 rounded-2xl bg-[#142B45] group-hover:bg-[#FF8E01] flex items-center justify-center text-[#FF8E01] group-hover:text-white mb-6 shadow-md transition-colors duration-300">
-              <Target className="w-8 h-8" />
+          {/* Vision Card - Dynamic Color Transition on Hover */}
+          <div className="bg-white hover:bg-[#142B45] border border-gray-200 hover:border-[#142B45] rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-2xl transition-all duration-300 relative overflow-hidden group hover:-translate-y-1.5 cursor-pointer flex flex-col justify-between">
+            <div>
+              <div className="w-16 h-16 rounded-2xl bg-[#FF8E01] flex items-center justify-center text-white mb-6 shadow-md transition-colors duration-300">
+                <Eye className="w-8 h-8" />
+              </div>
+              <h3 className="text-2xl font-black text-[#142B45] group-hover:text-white mb-4 transition-colors duration-300">
+                OUR VISION
+              </h3>
+              <p className="text-gray-600 group-hover:text-gray-200 text-sm sm:text-base leading-relaxed mb-6 transition-colors duration-300">
+                To become Tamil Nadu’s most trusted industrial brand by delivering high-quality products at the best prices, reaching every customer through strong distribution, and setting a new standard for value, reliability, and service.
+              </p>
             </div>
-            <h3 className="text-2xl font-black text-[#142B45] group-hover:text-white mb-4 transition-colors duration-300">
-              Our Mission
-            </h3>
-            <p className="text-gray-600 group-hover:text-gray-200 text-sm sm:text-base leading-relaxed mb-6 transition-colors duration-300">
-              To equip construction engineers, electrical contractors, and plumbers with certified, uncompromisingly safe wires and conduits that protect lives, eliminate maintenance liabilities, and guarantee long-term infrastructure durability.
-            </p>
-            <div className="space-y-3 pt-4 border-t border-gray-100 group-hover:border-white/15 text-xs font-semibold text-gray-700 group-hover:text-gray-100 transition-colors duration-300">
-              <div className="flex items-center gap-2.5">
-                <CheckCircle className="w-4 h-4 text-[#FF8E01] group-hover:text-[#FF8E01] shrink-0" />
-                <span>Eliminate counterfeit & low-gauge wires from job sites</span>
+
+            {/* 4 Pillars: Quality, Innovation, Growth, Sustainability */}
+            <div className="grid grid-cols-2 gap-3 pt-4 border-t border-gray-100 group-hover:border-white/15">
+              <div className="bg-gray-50 group-hover:bg-white/10 p-2.5 rounded-xl text-center font-bold text-xs uppercase tracking-wider text-[#142B45] group-hover:text-white transition-colors flex items-center justify-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#FF8E01]"></span> Quality
               </div>
-              <div className="flex items-center gap-2.5">
-                <CheckCircle className="w-4 h-4 text-[#FF8E01] group-hover:text-[#FF8E01] shrink-0" />
-                <span>Provide factory-direct transparency in bulk pricing</span>
+              <div className="bg-gray-50 group-hover:bg-white/10 p-2.5 rounded-xl text-center font-bold text-xs uppercase tracking-wider text-[#142B45] group-hover:text-white transition-colors flex items-center justify-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#FF8E01]"></span> Innovation
               </div>
-              <div className="flex items-center gap-2.5">
-                <CheckCircle className="w-4 h-4 text-[#FF8E01] group-hover:text-[#FF8E01] shrink-0" />
-                <span>Zero defect guarantee with ISO 9001:2015 batch tracing</span>
+              <div className="bg-gray-50 group-hover:bg-white/10 p-2.5 rounded-xl text-center font-bold text-xs uppercase tracking-wider text-[#142B45] group-hover:text-white transition-colors flex items-center justify-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#FF8E01]"></span> Growth
+              </div>
+              <div className="bg-gray-50 group-hover:bg-white/10 p-2.5 rounded-xl text-center font-bold text-xs uppercase tracking-wider text-[#142B45] group-hover:text-white transition-colors flex items-center justify-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#FF8E01]"></span> Sustainability
               </div>
             </div>
           </div>
 
-          {/* Vision Card - Dynamic Color Transition on Hover */}
-          <div className="bg-white hover:bg-[#142B45] border border-gray-200 hover:border-[#142B45] rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-2xl transition-all duration-300 relative overflow-hidden group hover:-translate-y-1.5 cursor-pointer">
-            <div className="w-16 h-16 rounded-2xl bg-[#FF8E01] group-hover:bg-[#FF8E01] flex items-center justify-center text-white mb-6 shadow-md transition-colors duration-300">
-              <Eye className="w-8 h-8" />
+          {/* Mission Card - Dynamic Color Transition on Hover */}
+          <div className="bg-white hover:bg-[#142B45] border border-gray-200 hover:border-[#142B45] rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-2xl transition-all duration-300 relative overflow-hidden group hover:-translate-y-1.5 cursor-pointer flex flex-col justify-between">
+            <div>
+              <div className="w-16 h-16 rounded-2xl bg-[#142B45] group-hover:bg-[#FF8E01] flex items-center justify-center text-[#FF8E01] group-hover:text-white mb-6 shadow-md transition-colors duration-300">
+                <Target className="w-8 h-8" />
+              </div>
+              <h3 className="text-2xl font-black text-[#142B45] group-hover:text-white mb-4 transition-colors duration-300">
+                OUR MISSION
+              </h3>
+              <div className="space-y-3 pt-2 text-xs sm:text-sm font-semibold text-gray-700 group-hover:text-gray-100 transition-colors duration-300">
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle className="w-4 h-4 text-[#FF8E01] shrink-0 mt-0.5" />
+                  <span>We provide A–Z Industrial solutions with reliable quality and competitive prices.</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle className="w-4 h-4 text-[#FF8E01] shrink-0 mt-0.5" />
+                  <span>Manufacturing locally in Tamil Nadu for better value and faster service.</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle className="w-4 h-4 text-[#FF8E01] shrink-0 mt-0.5" />
+                  <span>With a strong distribution network and responsive support.</span>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle className="w-4 h-4 text-[#FF8E01] shrink-0 mt-0.5" />
+                  <span>We ensure customer satisfaction while growing ethically and sustainably.</span>
+                </div>
+              </div>
             </div>
-            <h3 className="text-2xl font-black text-[#142B45] group-hover:text-white mb-4 transition-colors duration-300">
-              Our Vision
-            </h3>
-            <p className="text-gray-600 group-hover:text-gray-200 text-sm sm:text-base leading-relaxed mb-6 transition-colors duration-300">
-              To be India's most dependable integrated electrical and plumbing supply partner, recognized for setting the benchmark in fire-retardant compounding, lead-free piping innovations, and contractor-centric technical support.
-            </p>
-            <div className="space-y-3 pt-4 border-t border-gray-100 group-hover:border-white/15 text-xs font-semibold text-gray-700 group-hover:text-gray-100 transition-colors duration-300">
-              <div className="flex items-center gap-2.5">
-                <CheckCircle className="w-4 h-4 text-[#FF8E01] group-hover:text-[#FF8E01] shrink-0" />
-                <span>Expand green, halogen-free, recyclable polymer formulations</span>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <CheckCircle className="w-4 h-4 text-[#FF8E01] group-hover:text-[#FF8E01] shrink-0" />
-                <span>Zero delivery delays with digital warehouse synchronization</span>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <CheckCircle className="w-4 h-4 text-[#FF8E01] group-hover:text-[#FF8E01] shrink-0" />
-                <span>Trusted supply partner for high-rise MEP infrastructures nationwide</span>
-              </div>
+
+            <div className="pt-6 border-t border-gray-100 group-hover:border-white/15 text-xs text-gray-500 group-hover:text-gray-300">
+              Tamil Nadu Local Manufacturing • Faster Service &amp; Responsive Support
             </div>
           </div>
         </div>

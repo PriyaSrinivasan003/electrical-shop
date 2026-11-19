@@ -95,7 +95,7 @@ export default function MobileMessagingInteractive({
             </div>
           </div>
           <a
-            href="tel:+919876543210"
+            href="tel:+919449117729"
             className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center text-[#142B45] hover:bg-[#FF8E01] hover:text-white transition-colors"
             title="Call Technical Support"
           >

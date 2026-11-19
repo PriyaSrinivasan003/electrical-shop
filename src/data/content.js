@@ -1,13 +1,14 @@
 export const COMPANY_INFO = {
   name: "VRL Wires and Cables",
   tagline: "Industrial Grade Electrical & Plumbing Solutions",
-  phone: "+91 98765 43210",
-  altPhone: "+91 98450 12345",
-  whatsapp: "+919876543210",
-  email: "sales@vrlwires.com",
-  supportEmail: "support@vrlwires.com",
-  address: "Plot No. 42-45, Industrial Area, Phase-II, Peenya, Bengaluru, Karnataka 560058, India",
-  workingHours: "Monday - Saturday: 8:30 AM - 7:30 PM",
+  phone: "+91 94491 17729",
+  altPhone: "+91 94491 17729",
+  whatsapp: "+919449117729",
+  email: "Info@polyhills.com",
+  supportEmail: "Info@polyhills.com",
+  address: "Road No.13, Door No.16, V Nagar, Rasipuram - 637408",
+  mapsUrl: "https://maps.app.goo.gl/wcWxbcTtoUHYoAA69",
+  workingHours: "Mon - Sat: 10:00 AM - 8:00 PM (Sunday: Closed)",
   yearEstablished: "2008",
   certifications: ["ISO 9001:2015", "ISI Certified (BIS)", "RoHS Compliant", "CE Certified"]
 };

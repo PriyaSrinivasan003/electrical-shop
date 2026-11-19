@@ -9,7 +9,8 @@ import {
   ChevronRight, 
   ShieldCheck, 
   CheckCircle2, 
-  FileText 
+  FileText,
+  ArrowRightCircle
 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/content';
 import VRLLogo from './VRLLogo';
@@ -77,36 +78,48 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Featured Offerings */}
+          {/* Column 3: Products (Matching User Screenshot) */}
           <div>
-            <h3 className="text-white text-base font-bold tracking-wider uppercase mb-5 flex items-center gap-2">
-              <span className="w-2 h-4 bg-[#FF8E01] rounded-sm"></span>
-              Product Range
+            <h3 className="text-white text-lg font-bold tracking-tight mb-2">
+              Products
             </h3>
-            <ul className="space-y-2.5 text-sm text-gray-300">
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#FF8E01] shrink-0" />
-                <span>FR-LSH House Wires</span>
+            <div className="w-16 h-[2px] bg-white/40 mb-6" />
+            <ul className="space-y-3.5 text-sm font-semibold text-white">
+              <li>
+                <Link to="/wires-cables" className="flex items-center gap-2.5 hover:text-[#FF8E01] transition-colors group">
+                  <ArrowRightCircle className="w-4 h-4 text-white group-hover:text-[#FF8E01] transition-colors shrink-0" />
+                  <span>Multistrand Cables</span>
+                </Link>
               </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#FF8E01] shrink-0" />
-                <span>Rigid PVC Electrical Conduits</span>
+              <li>
+                <Link to="/wires-cables" className="flex items-center gap-2.5 hover:text-[#FF8E01] transition-colors group">
+                  <ArrowRightCircle className="w-4 h-4 text-white group-hover:text-[#FF8E01] transition-colors shrink-0" />
+                  <span>Multicore Cables</span>
+                </Link>
               </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#FF8E01] shrink-0" />
-                <span>Lead-Free UPVC Cold Water Pipes</span>
+              <li>
+                <Link to="/wires-cables" className="flex items-center gap-2.5 hover:text-[#FF8E01] transition-colors group">
+                  <ArrowRightCircle className="w-4 h-4 text-white group-hover:text-[#FF8E01] transition-colors shrink-0" />
+                  <span>Flat Cables</span>
+                </Link>
               </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#FF8E01] shrink-0" />
-                <span>Hot & Cold CPVC Pro Pipes</span>
+              <li>
+                <Link to="/pvc-pipes" className="flex items-center gap-2.5 hover:text-[#FF8E01] transition-colors group">
+                  <ArrowRightCircle className="w-4 h-4 text-white group-hover:text-[#FF8E01] transition-colors shrink-0" />
+                  <span>PVC Conduit Pipe</span>
+                </Link>
               </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#FF8E01] shrink-0" />
-                <span>XLPE Armoured LT/HT Cables</span>
+              <li>
+                <Link to="/wires-cables" className="flex items-center gap-2.5 hover:text-[#FF8E01] transition-colors group">
+                  <ArrowRightCircle className="w-4 h-4 text-white group-hover:text-[#FF8E01] transition-colors shrink-0" />
+                  <span>Underground Cables</span>
+                </Link>
               </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#FF8E01] shrink-0" />
-                <span>SWR Drainage & Precision Fittings</span>
+              <li>
+                <Link to="/wires-cables" className="flex items-center gap-2.5 hover:text-[#FF8E01] transition-colors group">
+                  <ArrowRightCircle className="w-4 h-4 text-white group-hover:text-[#FF8E01] transition-colors shrink-0" />
+                  <span>VIR Cables</span>
+                </Link>
               </li>
             </ul>
           </div>

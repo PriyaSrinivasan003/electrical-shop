@@ -550,7 +550,7 @@ export default function StorytellingScrollSection() {
             </Link>
 
             <a
-              href="tel:+919876543210"
+              href="tel:+919449117729"
               className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md px-7 py-4 rounded-xl font-bold text-base transition-colors"
             >
               <PhoneCall className="w-5 h-5 text-[#FF8E01]" />

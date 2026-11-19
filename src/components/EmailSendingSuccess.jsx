@@ -151,7 +151,7 @@ export default function EmailSendingSuccess({
 
                 {/* Letter Footer */}
                 <div className="flex items-center justify-between text-[8px] text-emerald-600 font-semibold pt-1 border-t border-gray-50">
-                  <span>Routing to Peenya Factory</span>
+                  <span>Routing to Rasipuram Facility</span>
                   <span>⚡ Priority</span>
                 </div>
               </motion.div>
