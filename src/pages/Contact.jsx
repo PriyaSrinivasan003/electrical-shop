@@ -8,14 +8,16 @@ import {
   MessageSquare, 
   Send, 
   CheckCircle, 
-  AlertCircle,
-  Building2,
-  FileCheck2,
-  Home as HomeIcon,
-  ChevronRight,
-  ShieldAlert,
-  Headphones,
-  CheckCircle2
+  AlertCircle, 
+  Building2, 
+  FileCheck2, 
+  Home as HomeIcon, 
+  ChevronRight, 
+  ShieldAlert, 
+  Headphones, 
+  CheckCircle2,
+  ExternalLink,
+  Navigation
 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/content';
 import EmailSendingSuccess from '../components/EmailSendingSuccess';
@@ -33,6 +35,38 @@ export default function Contact() {
     message: initialProduct ? `Hello, I would like to request bulk pricing, MOQ, and technical catalog for ${initialProduct}.` : '',
     projectType: 'Commercial / Contractor'
   });
+
+  const [selectedBranch, setSelectedBranch] = useState('corporate');
+
+  const offices = [
+    {
+      id: 'corporate',
+      name: 'Corporate Office',
+      phone: '+91 94491 17729',
+      address: 'Road No.13, Door No.16, V Nagar, Rasipuram - 637408',
+      mapLink: 'https://maps.app.goo.gl/ofYof5KxSPtiWbRs6',
+      embedUrl: 'https://maps.google.com/maps?q=11.4620278,78.1939722&z=15&output=embed',
+      isHQ: true
+    },
+    {
+      id: 'erode',
+      name: 'Erode Branch',
+      phone: '+91 94491 17729',
+      address: '#15/1, Pumping Station Road, 5th Cross, Thirunagar Colony, Near VOC Park back side, Erode - 638003',
+      mapLink: 'https://maps.app.goo.gl/NT7BEycuG3oeYqcg6',
+      embedUrl: 'https://maps.google.com/maps?q=11.353756,77.7212448&z=15&output=embed',
+      isHQ: false
+    },
+    {
+      id: 'salem',
+      name: 'Salem Branch',
+      phone: '+91 94491 17729',
+      address: '#211, Ground Floor, Suramangalam Road, Pallapatti, Salem - 636009',
+      mapLink: 'https://maps.app.goo.gl/sJ6bXo1zorVHn69h9',
+      embedUrl: 'https://maps.google.com/maps?q=11.6588889,78.1380278&z=15&output=embed',
+      isHQ: false
+    }
+  ];
 
   const [formErrors, setFormErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -182,64 +216,91 @@ export default function Contact() {
           {/* Left Column: Direct Contact Info (5 Cols) */}
           <div className="lg:col-span-5 space-y-6">
             
-            {/* Direct Cards */}
-            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-              <h3 className="text-xl font-bold text-[#142B45] mb-6 flex items-center gap-2">
-                <Building2 className="w-5 h-5 text-[#FF8E01]" />
-                Headquarters & Factory Outlet
-              </h3>
+            {/* Connect with Our Offices Card */}
+            <div className="bg-white rounded-2xl p-6 sm:p-7 border border-gray-200 shadow-sm">
+              <div className="flex items-center justify-between pb-4 mb-5 border-b border-gray-100">
+                <h3 className="text-xl font-black text-[#142B45] flex items-center gap-2">
+                  <Building2 className="w-5 h-5 text-[#FF8E01]" />
+                  Connect with Our Offices
+                </h3>
+                <span className="text-xs bg-[#FF8E01]/10 text-[#FF8E01] font-bold px-2.5 py-0.5 rounded-full">
+                  3 Locations
+                </span>
+              </div>
 
-              <div className="space-y-5 text-sm text-gray-700">
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-[#F5F7FA] border border-gray-200 flex items-center justify-center shrink-0 text-[#142B45]">
-                    <MapPin className="w-5 h-5 text-[#FF8E01]" />
-                  </div>
-                  <div>
-                    <span className="block font-bold text-[#142B45]">Registered Address:</span>
-                    <p className="text-gray-600 mt-0.5 leading-relaxed">{COMPANY_INFO.address}</p>
-                  </div>
+              {/* Office Branch List */}
+              <div className="space-y-4">
+                {offices.map((office) => {
+                  const isCurrent = selectedBranch === office.id;
+                  return (
+                    <div
+                      key={office.id}
+                      onClick={() => setSelectedBranch(office.id)}
+                      className={`p-4 rounded-xl border transition-all cursor-pointer ${
+                        isCurrent
+                          ? 'bg-[#FAF8F5] border-[#FF8E01] shadow-sm ring-1 ring-[#FF8E01]/30'
+                          : 'bg-white border-gray-200 hover:border-gray-300 hover:bg-gray-50/60'
+                      }`}
+                    >
+                      <div className="flex items-start justify-between gap-2 mb-2">
+                        <div className="flex items-center gap-2">
+                          <h4 className="font-bold text-sm sm:text-base text-[#142B45]">
+                            {office.name}
+                          </h4>
+                          {office.isHQ && (
+                            <span className="text-[10px] uppercase tracking-wider font-extrabold bg-[#142B45] text-white px-2 py-0.5 rounded">
+                              HQ
+                            </span>
+                          )}
+                        </div>
+                        <a
+                          href={office.mapLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex items-center gap-1 text-xs font-bold text-[#FF8E01] hover:text-[#e57e00] hover:underline shrink-0"
+                        >
+                          <Navigation className="w-3.5 h-3.5" />
+                          <span>View Location</span>
+                        </a>
+                      </div>
+
+                      {/* Phone */}
+                      <div className="flex items-center gap-2 text-xs font-semibold text-gray-700 mb-2">
+                        <Phone className="w-3.5 h-3.5 text-[#FF8E01] shrink-0" />
+                        <a href={`tel:${office.phone}`} className="hover:text-[#FF8E01] transition-colors">
+                          {office.phone}
+                        </a>
+                      </div>
+
+                      {/* Address */}
+                      <div className="flex items-start gap-2 text-xs text-gray-600 leading-relaxed">
+                        <MapPin className="w-3.5 h-3.5 text-gray-400 shrink-0 mt-0.5" />
+                        <span>{office.address}</span>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Corporate Contact Meta (Email & Hours) */}
+              <div className="mt-5 pt-4 border-t border-gray-100 space-y-2.5 text-xs text-gray-700">
+                <div className="flex items-center gap-2">
+                  <Mail className="w-4 h-4 text-[#FF8E01] shrink-0" />
+                  <span className="font-semibold text-gray-500">Email:</span>
+                  <a href={`mailto:${COMPANY_INFO.email}`} className="font-bold text-[#142B45] hover:text-[#FF8E01]">
+                    {COMPANY_INFO.email}
+                  </a>
                 </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-[#F5F7FA] border border-gray-200 flex items-center justify-center shrink-0 text-[#142B45]">
-                    <Phone className="w-5 h-5 text-[#FF8E01]" />
-                  </div>
-                  <div>
-                    <span className="block font-bold text-[#142B45]">Phone Number:</span>
-                    <a href={`tel:${COMPANY_INFO.phone}`} className="text-gray-600 hover:text-[#FF8E01] block font-semibold">
-                      {COMPANY_INFO.phone}
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-[#F5F7FA] border border-gray-200 flex items-center justify-center shrink-0 text-[#142B45]">
-                    <Mail className="w-5 h-5 text-[#FF8E01]" />
-                  </div>
-                  <div>
-                    <span className="block font-bold text-[#142B45]">Email Enquiries:</span>
-                    <a href={`mailto:${COMPANY_INFO.email}`} className="text-gray-600 hover:text-[#FF8E01] block">
-                      {COMPANY_INFO.email}
-                    </a>
-                    <a href={`mailto:${COMPANY_INFO.supportEmail}`} className="text-gray-600 hover:text-[#FF8E01] text-xs">
-                      {COMPANY_INFO.supportEmail}
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-[#F5F7FA] border border-gray-200 flex items-center justify-center shrink-0 text-[#142B45]">
-                    <Clock className="w-5 h-5 text-[#FF8E01]" />
-                  </div>
-                  <div>
-                    <span className="block font-bold text-[#142B45]">Working Hours:</span>
-                    <span className="text-gray-600 block">{COMPANY_INFO.workingHours}</span>
-                  </div>
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-[#FF8E01] shrink-0" />
+                  <span className="font-semibold text-gray-500">Hours:</span>
+                  <span className="text-gray-700 font-medium">{COMPANY_INFO.workingHours}</span>
                 </div>
               </div>
 
               {/* Instant WhatsApp Help Button */}
-              <div className="mt-8 pt-6 border-t border-gray-100">
+              <div className="mt-6 pt-4 border-t border-gray-100">
                 <a
                   href={`https://wa.me/${COMPANY_INFO.whatsapp}?text=Hello%20VRL%20Wires%20and%20Cables,%20I%20have%20an%20urgent%20material%20enquiry.`}
                   target="_blank"
@@ -492,33 +553,68 @@ export default function Contact() {
       {/* 3. GOOGLE MAPS INTEGRATION */}
       <section className="bg-white py-12 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-8">
-            <h3 className="text-2xl font-black text-[#142B45]">Visit Our Facility</h3>
-            <p className="text-gray-500 text-xs sm:text-sm mt-1">Conveniently located at {COMPANY_INFO.address}.</p>
-            <div className="mt-2">
-              <a 
-                href={COMPANY_INFO.mapsUrl} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-[#FF8E01] hover:underline"
-              >
-                <span>Open in Google Maps App ↗</span>
-              </a>
-            </div>
-          </div>
+          {(() => {
+            const currentOffice = offices.find(o => o.id === selectedBranch) || offices[0];
+            return (
+              <>
+                <div className="text-center max-w-2xl mx-auto mb-6">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#FF8E01] bg-[#FF8E01]/10 px-3 py-1 rounded-full">
+                    Interactive Location Map
+                  </span>
+                  <h3 className="text-2xl font-black text-[#142B45] mt-2">
+                    {currentOffice.name} {currentOffice.isHQ ? '(Headquarters)' : ''}
+                  </h3>
+                  <p className="text-gray-500 text-xs sm:text-sm mt-1">
+                    {currentOffice.address}
+                  </p>
+                  
+                  {/* Branch Switch Tabs */}
+                  <div className="flex flex-wrap items-center justify-center gap-2 mt-4">
+                    {offices.map((off) => (
+                      <button
+                        key={off.id}
+                        type="button"
+                        onClick={() => setSelectedBranch(off.id)}
+                        className={`text-xs px-3.5 py-1.5 rounded-full font-bold transition-all cursor-pointer ${
+                          selectedBranch === off.id
+                            ? 'bg-[#142B45] text-white shadow-sm'
+                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                        }`}
+                      >
+                        {off.name}
+                      </button>
+                    ))}
+                  </div>
 
-          <div className="w-full h-96 rounded-2xl overflow-hidden border border-gray-300 shadow-md">
-            <iframe
-              title="VRL Wires and Cables Facility Location - Rasipuram"
-              src="https://maps.google.com/maps?q=11.6579987,78.1371627&z=15&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
+                  <div className="mt-3">
+                    <a 
+                      href={currentOffice.mapLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#FF8E01] hover:underline"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      <span>Open {currentOffice.name} in Google Maps App ↗</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="w-full h-96 rounded-2xl overflow-hidden border border-gray-300 shadow-md">
+                  <iframe
+                    key={currentOffice.id}
+                    title={`${currentOffice.name} Location`}
+                    src={currentOffice.embedUrl}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+              </>
+            );
+          })()}
         </div>
       </section>
 
